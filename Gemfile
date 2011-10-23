@@ -30,8 +30,12 @@ gem 'therubyracer'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
-
+group :development do
+ gem 'rspec-rails' , '2.0.1'
+end
 group :test do
   # Pretty printed test output
-  gem 'turn', :require => false
+  #gem 'turn', :require => false
+ gem 'rspec-rails' , '2.0.1'
+ gem 'webrat' , '0.7.1'
 end
